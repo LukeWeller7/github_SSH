@@ -61,7 +61,20 @@ The key's randomart image is:
 ``` 
 eval `ssh-agent` (Output: Agent pid ***)
 ```
+- Add in your private key to connect with
 ```ssh-add ~/.ssh/id_rsa```
+- Allow access for Github to connect with your ssh key
 ```ssh -T git@github.com```
-- connect your
+- Setting your pycharm git repo as your origin link to the GitHub repo
 ```git remote add origin git@github.com:LukeWeller7/github_SSH.git```
+- Check that the connection is complete with
+```git remote -v```
+```
+Expected Output:
+origin  git@github.com:LukeWeller7/github_SSH.git (fetch)
+origin  git@github.com:LukeWeller7/github_SSH.git (push)
+```
+- Save your files and pushing your local repo to GitHub with
+```git add .```
+```git commit -m "comment here"```
+```git push -u origin main```
