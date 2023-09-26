@@ -65,6 +65,8 @@ eval `ssh-agent` (Output: Agent pid ***)
 ```ssh-add ~/.ssh/id_rsa```
 - Allow access for Github to connect with your ssh key
 ```ssh -T git@github.com```
+- Set the remote connection as a ssh key.
+```git remote set-url origin git@github.com:LukeWeller7/github_SSH.git```
 - Setting your pycharm git repo as your origin link to the GitHub repo
 ```git remote add origin git@github.com:LukeWeller7/github_SSH.git```
 - Check that the connection is complete with
@@ -75,6 +77,6 @@ origin  git@github.com:LukeWeller7/github_SSH.git (fetch)
 origin  git@github.com:LukeWeller7/github_SSH.git (push)
 ```
 - Save your files and pushing your local repo to GitHub with
-```git add .```
-```git commit -m "comment here"```
-```git push -u origin main```
+  - Add working files to staging area ```git add .```
+  - Commit files to local repository ```git commit -m "comment here"```
+  - Push files in local repository to github ```git push -u origin main```
